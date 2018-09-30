@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CsV-NJ-W5h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="avx-qB-NxT">
+            <objects>
+                <viewController id="CsV-NJ-W5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Uc-aJ-eGr"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Nl-y4-WIO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QcY-KO-Tq3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen-background" translatesAutoresizingMaskIntoConstraints="NO" id="1X5-sU-nRD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini Wikipedia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsI-fh-ytD">
+                                <rect key="frame" x="82" y="316.5" width="213" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1X5-sU-nRD" secondAttribute="trailing" id="3ys-Tk-LiX"/>
+                            <constraint firstItem="1X5-sU-nRD" firstAttribute="top" secondItem="QcY-KO-Tq3" secondAttribute="top" id="4Su-07-46G"/>
+                            <constraint firstItem="xsI-fh-ytD" firstAttribute="centerY" secondItem="QcY-KO-Tq3" secondAttribute="centerY" id="GkX-jk-knG"/>
+                            <constraint firstItem="1X5-sU-nRD" firstAttribute="leading" secondItem="QcY-KO-Tq3" secondAttribute="leading" id="JfN-J4-ZYx"/>
+                            <constraint firstAttribute="bottom" secondItem="1X5-sU-nRD" secondAttribute="bottom" id="Yd7-ir-2yW"/>
+                            <constraint firstItem="xsI-fh-ytD" firstAttribute="centerX" secondItem="QcY-KO-Tq3" secondAttribute="centerX" id="t7t-EB-ob1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZBz-67-YjK"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1X5-sU-nRD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3ys-Tk-LiX"/>
+                                <exclude reference="4Su-07-46G"/>
+                                <exclude reference="JfN-J4-ZYx"/>
+                                <exclude reference="Yd7-ir-2yW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1X5-sU-nRD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3ys-Tk-LiX"/>
+                                <include reference="4Su-07-46G"/>
+                                <include reference="JfN-J4-ZYx"/>
+                                <include reference="Yd7-ir-2yW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGe-p2-IKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashscreen-background" width="415" height="736"/>
+    </resources>
+</document>
