@@ -79,8 +79,10 @@ class ExploreViewController: UIViewController {
     
     func showDetail(for searchItem: SearchItem) {
         let apiService = APIService.shared
+        showLoadingIndicator()
         apiService.fetchSearchItemDetail(for: searchItem) { (htmlContent, errorMessssage) in
             DispatchQueue.main.async {
+                self.hideLoadingIndicator()
                 if errorMessssage != nil {
                     self.showAlertWith(title: "Error", message: errorMessssage!)
                 } else if (htmlContent != nil) {
